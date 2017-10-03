@@ -37,3 +37,5 @@ Sample
 202.166.192.0 to 202.166.223.255 => 202.166.192.0/19
 203.78.160.0 to 203.78.175.255 => 203.78.160.0/20
 ```
+
+You can find more information on Subnetting and CIDR notation from Joshua Butcher's video here: https://www.youtube.com/watch?v=POPoAjWFkGg
