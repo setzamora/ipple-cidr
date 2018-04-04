@@ -2,7 +2,6 @@ import csv
 import re
 import sys
 
-
 def read_csv(*argv):
     for filename in argv[0]:
         filename = filename.strip()
@@ -63,8 +62,8 @@ def split_ip_address(ip1, ip2):
 def check_ip_address(ip):
     ip_regex = r'^(([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5]).){3}'
     ip_regex = ip_regex + r'([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$'
-    ipaddressregex = re.compile(ip_regex)
-    match = ipaddressregex.match(ip)
+    ip_address_regex = re.compile(ip_regex)
+    match = ip_address_regex.match(ip)
     if match is not None:
         return True
     else:
